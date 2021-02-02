@@ -1,0 +1,27 @@
+div.card {
+   border: 1px solid #000000;
+   width: 350px;
+   padding: 10px;
+   text-align: center;
+}
+
+div.card > p {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+
+span.waktu {
+   /* text-align: left; */
+   width: 50px;
+}
+
+span.masa {
+   width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+   div.card {
+      width: 275px;
+   }
+}

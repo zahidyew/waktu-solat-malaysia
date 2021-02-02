@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const SelectZon = ({zon, selected}) => {
+const SelectZon = ({zon, userZon, selected}) => {
    const handleChange = (event) => {
       selected(event.target.value)
       //console.log(event.target.value)
@@ -9,7 +9,7 @@ const SelectZon = ({zon, selected}) => {
 
    return (
       <>
-         <select onChange={(event) => handleChange(event)}>
+         <select id="select-zon" value={userZon} onChange={(event) => handleChange(event)}>
             {zon.map(item => {
                return (
                   <option key={zon.indexOf(item)} value={item}> {item} </option>
@@ -22,6 +22,7 @@ const SelectZon = ({zon, selected}) => {
 
 SelectZon.propTypes = {
    zon: PropTypes.array,
+   userZon: PropTypes.string,
    selected: PropTypes.func
 }
 

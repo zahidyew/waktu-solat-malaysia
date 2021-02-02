@@ -9,21 +9,21 @@ const Select = ({selected}) => {
 
    return (
       <>
-         <select name="" id="" onChange={(event) => handleChange(event)}>
-            <option value="sabah">sabah</option>
-            <option value="johor">johor</option>
-            <option value="kedah">kedah</option>
-            <option value="kelantan">kelantan</option>
-            <option value="melaka">melaka</option>
-            <option value="negeri sembilan">negeri sembilan</option>
-            <option value="pahang">pahang</option>
-            <option value="perlis">perlis</option>
-            <option value="pulau pinang">pulau pinang</option>
-            <option value="perak">perak</option>
-            <option value="selangor">selangor</option>
-            <option value="sarawak">sarawak</option>
-            <option value="terengganu">terengganu</option>
-            <option value="wilayah persekutuan">wilayah persekutuan</option>
+         <select id="select-negeri" onChange={(event) => handleChange(event)}>
+            <option value="sabah">Sabah</option>
+            <option value="johor">Johor</option>
+            <option value="kedah">Kedah</option>
+            <option value="kelantan">Kelantan</option>
+            <option value="melaka">Melaka</option>
+            <option value="negeri sembilan">Negeri Sembilan</option>
+            <option value="pahang">Pahang</option>
+            <option value="perlis">Perlis</option>
+            <option value="pulau pinang">Pulau Pinang</option>
+            <option value="perak">Perak</option>
+            <option value="selangor">Selangor</option>
+            <option value="sarSawak">Sarawak</option>
+            <option value="terengganu">Terengganu</option>
+            <option value="wilayah persekutuan">Wilayah Persekutuan</option>
          </select>
       </>
    )
