@@ -10,12 +10,13 @@ function App() {
 	const [zon, setZon] = useState([])
 	const [userZon, setUserZon] = useState('kota kinabalu')
 	const [waktuSolat, setWaktuSolat] = useState([])
-	const [flag, setFlag] = useState(false);
+	const [newSession, setNewSession] = useState(true);
 	
+	// fetch zones for a negeri 
 	useEffect(() => {
 		const fetchData = async () => {
 			// user had set a default location & a fresh session
-			if (localStorage.getItem('cookie_negeri') !== null && !flag) { 
+			if (localStorage.getItem('cookie_negeri') !== null && newSession) { 
 				setNegeri(localStorage.getItem('cookie_negeri'));
 			}
 			const url = 'https://waktu-solat-api.herokuapp.com/api/v1/states.json?negeri=' + negeri
@@ -24,17 +25,18 @@ function App() {
 			setZon(data.data.negeri.zon)
 
 			// user had set a default location & a fresh session
-			if (localStorage.getItem('cookie_zon') !== null && !flag) {
+			if (localStorage.getItem('cookie_zon') !== null && newSession) {
 				setUserZon(localStorage.getItem('cookie_zon'));
-				setFlag(true)
+				setNewSession(false)
 			} else {
 				setUserZon(data.data.negeri.zon[0])
 			}
 		}
 		fetchData()
 	}, [negeri]) // eslint-disable-line
-	// ignore warning about flag.
+	// ignore warning about newSession.
 
+	// fetch waktu solat for a specific zon
 	useEffect(() => {
 		const fetchData = async () => {
 			const url = 'https://waktu-solat-api.herokuapp.com/api/v1/prayer_times.json?zon=' + userZon
@@ -42,23 +44,19 @@ function App() {
 			const data = await res.json()
 
 			setWaktuSolat(data.data[0].waktu_solat)
-			//console.log(data.data[0].waktu_solat)
 		}
 		fetchData()
 	}, [userZon])
 
 	const selectedValue = (value) => {
-		//console.log(value)
 		setNegeri(value)
 	}
 
 	const selectedZon = (zon) => {
-		//console.log(zon)
 		setUserZon(zon)
 	}
 
 	const setDefaultLocation = () => {
-		//console.log('state up');
 		localStorage.setItem('cookie_negeri', negeri)
 		localStorage.setItem('cookie_zon', userZon)
 	}
