@@ -22,7 +22,7 @@ const Select = ({negeri, selected}) => {
             <option value="pulau pinang">Pulau Pinang</option>
             <option value="perak">Perak</option>
             <option value="selangor">Selangor</option>
-            <option value="sarSawak">Sarawak</option>
+            <option value="sarawak">Sarawak</option>
             <option value="terengganu">Terengganu</option>
             <option value="wilayah persekutuan">Wilayah Persekutuan</option>
          </select>
