@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './Selects.css'
 
-const Select = ({selected}) => {
+const Select = ({negeri, selected}) => {
    const handleChange = (event) => {
       //console.log(event.target.value)
       selected(event.target.value)
@@ -9,7 +10,7 @@ const Select = ({selected}) => {
 
    return (
       <>
-         <select id="select-negeri" onChange={(event) => handleChange(event)}>
+         <select id="select-negeri" value={negeri} onChange={(event) => handleChange(event)}>
             <option value="sabah">Sabah</option>
             <option value="johor">Johor</option>
             <option value="kedah">Kedah</option>
@@ -30,6 +31,7 @@ const Select = ({selected}) => {
 }
 
 Select.propTypes = {
+   negeri: PropTypes.string,
    selected: PropTypes.func
 }
 
