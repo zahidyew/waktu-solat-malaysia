@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/waktu-solat/static/css/main.aaefa500.chunk.css",
-    "main.js": "/waktu-solat/static/js/main.cbf34d17.chunk.js",
-    "main.js.map": "/waktu-solat/static/js/main.cbf34d17.chunk.js.map",
-    "runtime-main.js": "/waktu-solat/static/js/runtime-main.b40cd190.js",
-    "runtime-main.js.map": "/waktu-solat/static/js/runtime-main.b40cd190.js.map",
-    "static/css/2.ffda3d49.chunk.css": "/waktu-solat/static/css/2.ffda3d49.chunk.css",
-    "static/js/2.7dc64c90.chunk.js": "/waktu-solat/static/js/2.7dc64c90.chunk.js",
-    "static/js/2.7dc64c90.chunk.js.map": "/waktu-solat/static/js/2.7dc64c90.chunk.js.map",
-    "index.html": "/waktu-solat/index.html",
-    "static/css/2.ffda3d49.chunk.css.map": "/waktu-solat/static/css/2.ffda3d49.chunk.css.map",
-    "static/css/main.aaefa500.chunk.css.map": "/waktu-solat/static/css/main.aaefa500.chunk.css.map",
-    "static/js/2.7dc64c90.chunk.js.LICENSE.txt": "/waktu-solat/static/js/2.7dc64c90.chunk.js.LICENSE.txt"
+    "main.css": "/waktu-solat-malaysia/static/css/main.aaefa500.chunk.css",
+    "main.js": "/waktu-solat-malaysia/static/js/main.cbf34d17.chunk.js",
+    "main.js.map": "/waktu-solat-malaysia/static/js/main.cbf34d17.chunk.js.map",
+    "runtime-main.js": "/waktu-solat-malaysia/static/js/runtime-main.0476df9f.js",
+    "runtime-main.js.map": "/waktu-solat-malaysia/static/js/runtime-main.0476df9f.js.map",
+    "static/css/2.ffda3d49.chunk.css": "/waktu-solat-malaysia/static/css/2.ffda3d49.chunk.css",
+    "static/js/2.7dc64c90.chunk.js": "/waktu-solat-malaysia/static/js/2.7dc64c90.chunk.js",
+    "static/js/2.7dc64c90.chunk.js.map": "/waktu-solat-malaysia/static/js/2.7dc64c90.chunk.js.map",
+    "index.html": "/waktu-solat-malaysia/index.html",
+    "static/css/2.ffda3d49.chunk.css.map": "/waktu-solat-malaysia/static/css/2.ffda3d49.chunk.css.map",
+    "static/css/main.aaefa500.chunk.css.map": "/waktu-solat-malaysia/static/css/main.aaefa500.chunk.css.map",
+    "static/js/2.7dc64c90.chunk.js.LICENSE.txt": "/waktu-solat-malaysia/static/js/2.7dc64c90.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b40cd190.js",
+    "static/js/runtime-main.0476df9f.js",
     "static/css/2.ffda3d49.chunk.css",
     "static/js/2.7dc64c90.chunk.js",
     "static/css/main.aaefa500.chunk.css",
